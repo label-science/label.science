@@ -6,14 +6,51 @@
     <title>Label Science</title>
     <link rel="stylesheet" href="css/pico.violet.min.css" />
 </head>
+    <style>
+        /* Position the text in the bottom third of the image */
+        .banner-container {
+            position: relative;
+            width: 100%;
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+
+        .banner-container img {
+            width: 100%;
+            display: block;
+        }
+
+        .banner-text {
+            position: absolute;
+            bottom: 15%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            color: white;
+            text-align: center;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        form {
+            margin-top: 1.5rem;
+            text-align: center;
+        }
+    </style>
+</head>
 <body>
     <main class="container">
-        <header>
-            <img src="label science banner.jpg" alt="Banner" style="width: 100%; border-radius: 0.5rem;">
+        <header class="banner-container">
+            <img src="banner.jpg" alt="Banner">
+            <div class="banner-text">
+                <h1>Label Science</h1>
+                <p>We want to make labeling data fun again. To be the first to hear when we go live, add you email below:</p>
+            </div>
         </header>
-        <section style="text-align: center; margin-top: 1.5rem;">
-            <h1>Label Science</h1>
-            <p>We want to make labeling data fun again. To be the first to hear when we go live, add you email below:</p>
+        <section>
+            <form action="#" method="post">
+                <label for="email">Be the first to know:</label>
+                <input type="email" id="email" name="email" placeholder="Your email address" required>
+                <button type="submit">Sign Up</button>
+            </form>
         </section>
     </main>
 </body>
