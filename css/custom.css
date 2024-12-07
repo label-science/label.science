@@ -1,0 +1,30 @@
+/* Position the text in the bottom third of the image */
+.banner-container {
+    position: relative;
+    width: 100%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.banner-container img {
+    width: 100%;
+    display: block;
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color:white !important;
+    text-align: center;
+    width: 30%;
+}
+
+form {
+    margin-top: 1.5rem;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    
+}
